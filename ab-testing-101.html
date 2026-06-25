@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A/B Testing 101 — Complete Guide | V CRO</title>
+<meta name="description" content="The complete A/B testing guide: hypotheses, statistical significance, sample size, prioritisation frameworks, and how to build a testing culture.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">V.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="ab-testing-101.html" class="active">A/B Testing 101</a></li>
+    <li><a href="use-cases.html">Use Cases</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="contact.html" class="nav-cta">Free Audit</a></li>
+  </ul>
+  <button class="hamburger" onclick="document.getElementById('mobMenu').classList.add('open')"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="document.getElementById('mobMenu').classList.remove('open')">✕</button>
+  <a href="index.html">Home</a>
+  <a href="ab-testing-101.html">A/B Testing 101</a>
+  <a href="use-cases.html">Use Cases</a>
+  <a href="blog.html">Blog</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="resources.html">Resources</a>
+  <a href="contact.html" style="color:var(--gold)">Free Audit →</a>
+</div>
+
+<div class="wrap">
+  <div class="eyebrow">Education Hub</div>
+  <h2 class="serif">A/B Testing 101 —<br><em>the complete guide.</em></h2>
+  <p class="lead">Everything you need to understand, plan, and run experiments that actually produce reliable results. Written by V.</p>
+
+  <div class="contact-grid" style="margin-bottom:5rem">
+    <div>
+      <p style="color:var(--text-secondary);font-size:13px;line-height:1.9;margin-bottom:1.5rem">A/B testing is not about guessing which button colour converts better. Done properly, it is a systematic scientific method for understanding human behaviour at scale — and using that understanding to improve every metric that matters to your business.</p>
+      <p style="color:var(--text-secondary);font-size:13px;line-height:1.9;margin-bottom:1.5rem">Most companies run tests wrong. They peek at results early. They call winners at 60% confidence. They test one page while ignoring the three pages before it that actually determine intent. The result: a programme that feels busy but delivers nothing.</p>
+      <p style="color:var(--text-secondary);font-size:13px;line-height:1.9">This hub will show you how to do it right — from the statistics to the strategy to the culture.</p>
+    </div>
+    <div class="card">
+      <div class="eyebrow" style="margin-bottom:1rem">In this hub</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem">
+        <li style="font-size:12px;color:var(--text-secondary);padding:.4rem 0;border-bottom:1px solid var(--border)">→ What is A/B testing &amp; why it matters</li>
+        <li style="font-size:12px;color:var(--text-secondary);padding:.4rem 0;border-bottom:1px solid var(--border)">→ The anatomy of a strong hypothesis</li>
+        <li style="font-size:12px;color:var(--text-secondary);padding:.4rem 0;border-bottom:1px solid var(--border)">→ Sample size &amp; statistical significance</li>
+        <li style="font-size:12px;color:var(--text-secondary);padding:.4rem 0;border-bottom:1px solid var(--border)">→ Common testing mistakes to avoid</li>
+        <li style="font-size:12px;color:var(--text-secondary);padding:.4rem 0;border-bottom:1px solid var(--border)">→ Prioritisation frameworks (ICE, PIE)</li>
+        <li style="font-size:12px;color:var(--text-secondary);padding:.4rem 0">→ Building a testing culture at your company</li>
+      </ul>
+      <a href="resources.html" class="btn-primary" style="margin-top:1.5rem;width:100%;text-align:center;display:block">Download the Full Guide PDF →</a>
+    </div>
+  </div>
+
+  <div class="eyebrow">Core concepts</div>
+  <h3 class="serif" style="margin-bottom:2rem">The building blocks every experimenter must know</h3>
+  <div class="seam-grid seam-2" style="margin-bottom:5rem">
+    <div class="seam-cell"><div style="font-family:var(--serif);font-size:2rem;color:var(--text-muted);margin-bottom:.75rem">01</div><div class="card-title">The Hypothesis</div><p class="card-body">Every test starts with a hypothesis, not an idea. Format: "Because we observed [data], we believe that changing [element] for [audience] will result in [outcome] because [rationale]." If you can't fill in every blank, you're not ready to test.</p></div>
+    <div class="seam-cell"><div style="font-family:var(--serif);font-size:2rem;color:var(--text-muted);margin-bottom:.75rem">02</div><div class="card-title">Statistical Significance</div><p class="card-body">Significance tells you the probability your result is real, not random noise. 95% confidence means only a 5% chance the result is a fluke. Never call a winner below 95%.</p></div>
+    <div class="seam-cell"><div style="font-family:var(--serif);font-size:2rem;color:var(--text-muted);margin-bottom:.75rem">03</div><div class="card-title">Sample Size</div><p class="card-body">Underpowered tests are the most common mistake. Calculate visitors needed per variant based on baseline conversion rate and minimum detectable effect before launching.</p></div>
+    <div class="seam-cell"><div style="font-family:var(--serif);font-size:2rem;color:var(--text-muted);margin-bottom:.75rem">04</div><div class="card-title">The ICE Score</div><p class="card-body">Impact, Confidence, Ease — score each test idea 1–10 on each, average the three, prioritise by highest total. Imperfect but fast.</p></div>
+    <div class="seam-cell"><div style="font-family:var(--serif);font-size:2rem;color:var(--text-muted);margin-bottom:.75rem">05</div><div class="card-title">Primary vs Secondary Metrics</div><p class="card-body">Your primary metric is what you're optimising for — revenue per visitor, leads, add-to-cart. Never optimise a secondary metric at its expense.</p></div>
+    <div class="seam-cell"><div style="font-family:var(--serif);font-size:2rem;color:var(--text-muted);margin-bottom:.75rem">06</div><div class="card-title">Novelty Effect</div><p class="card-body">Changing a familiar page causes a temporary lift from curiosity alone. Run tests a minimum of two business cycles before reading results.</p></div>
+  </div>
+
+  <div class="eyebrow">Deep-dive articles</div>
+  <h3 class="serif" style="margin-bottom:2rem">Written by V</h3>
+  <div class="seam-grid" style="grid-template-columns:1fr">
+    <div class="seam-cell" style="cursor:pointer" onclick="location.href='blog.html'">
+      <div class="card-tag">Foundations · 8 min read</div>
+      <div class="card-title" style="font-size:1.3rem">Why 83% of A/B Tests Produce No Statistically Valid Result</div>
+      <p class="card-body" style="margin-bottom:.75rem">Most testing programmes are systematically underpowered. Teams launch tests with a few hundred visitors a week against a 3% baseline and wonder why every result is inconclusive. Here is how to fix it.</p>
+      <span class="link-arrow">Read article →</span>
+    </div>
+    <div class="seam-cell" style="cursor:pointer" onclick="location.href='blog.html'">
+      <div class="card-tag">Strategy · 6 min read</div>
+      <div class="card-title" style="font-size:1.3rem">The Hypothesis Stack: 50 Test Ideas From One Analytics Session</div>
+      <p class="card-body" style="margin-bottom:.75rem">A structured approach to mining analytics, heatmaps, and session recordings — turning raw observations into prioritised, hypothesis-driven experiments.</p>
+      <span class="link-arrow">Read article →</span>
+    </div>
+    <div class="seam-cell" style="cursor:pointer" onclick="location.href='blog.html'">
+      <div class="card-tag">Statistics · 10 min read</div>
+      <div class="card-title" style="font-size:1.3rem">Peeking, P-Hacking, and the Other Ways Your Data Is Lying to You</div>
+      <p class="card-body" style="margin-bottom:.75rem">Checking results daily and extending tests after seeing a positive result silently corrupt every insight your programme produces. Here's what to do instead.</p>
+      <span class="link-arrow">Read article →</span>
+    </div>
+    <div class="seam-cell" style="cursor:pointer" onclick="location.href='blog.html'">
+      <div class="card-tag">Culture · 7 min read</div>
+      <div class="card-title" style="font-size:1.3rem">How to Build a Testing Culture When Your CEO Doesn't Believe in Data</div>
+      <p class="card-body" style="margin-bottom:.75rem">Organisational resistance is the #1 reason CRO programmes fail. A practical guide to running a stealth experimentation programme until results speak for themselves.</p>
+      <span class="link-arrow">Read article →</span>
+    </div>
+  </div>
+
+  <div class="highlight-box" style="margin-top:4rem">
+    <div><h3>Want this applied to your site?</h3><p>I'll personally find your highest-impact testing opportunities — free.</p></div>
+    <a href="contact.html" class="btn-primary">Claim Your Free Audit</a>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html" class="footer-logo">V.</a>
+  <span>© 2025 V — Conversion Rate Optimisation</span>
+  <div class="footer-links"><a href="ab-testing-101.html">Learn</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+</footer>
+</body>
+</html>
